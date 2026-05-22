@@ -1,19 +1,12 @@
 ## 🧠 GREAT: Generalizable Backdoor Attacks in RLHF via Emotion-Aware Trigger Synthesis
 
-🧑‍🔬 **Authors:** Subrat Kishore Dutta, Yuelin Xu, Piyush Pant, Xiao Zhang 
-
-
-🧬 **AIR-ML Lab**  - [Adversarial, Interpretable, and Robust Machine Learning Lab, CISPA](https://air-ml.org)
-
-
-📚 **Publication:** [arXiv →](https://arxiv.org/abs/2510.09260)
 
 
 ---
 
 ### 🌟 Overview
 <div align="center">
-  <img src="https://github.com/PiyushWithPant/GREAT/blob/main/assets/overview.jpg" alt="GREAT Overview" width="95%">
+  <img src="https://github.com/phd99ch01/GREAT-Generalizable-Backdoor-Attacks-in-RLHF-via-Emotion-Aware-Trigger-Synthesis/assets/overview.jpg" alt="GREAT Overview" width="95%">
 </div>
 
 
@@ -147,34 +140,3 @@ After completing all steps, the following directories/files will be generated:
 - ☣️ `data/` → Poisoned preference datasets, classifed dataset  
 - 📈 `data/clustering/` → PCA visualizations & medoid info
 
-
-### 📘 Citation
-
-If you find this work useful, please cite:
-
-```bibtex
-@misc{dutta2025greatgeneralizablebackdoorattacks,
-      title={GREAT: Generalizable Backdoor Attacks in RLHF via Emotion-Aware Trigger Synthesis}, 
-      author={Subrat Kishore Dutta and Yuelin Xu and Piyush Pant and Xiao Zhang},
-      year={2025},
-      eprint={2510.09260},
-      archivePrefix={arXiv},
-      primaryClass={cs.CR},
-      url={https://arxiv.org/abs/2510.09260}, 
-}
-
-```
-
-
-### 🪪 License
-
-This project is released under the **MIT License** — see the [LICENSE](https://github.com/PiyushWithPant/GREAT/blob/main/LICENSE.md) file for details.
-
-
-### ❤️ Acknowledgments
-
-We thank the **CISPA Helmholtz Center for Information Security** and the **LLM Safety community** for their support and open discussions on responsible AI alignment and robustness research.
-
-
-# GREAT-Generalizable-Backdoor-Attacks-in-RLHF-via-Emotion-Aware-Trigger-Synthesis
-# GREAT-Generalizable-Backdoor-Attacks-in-RLHF-via-Emotion-Aware-Trigger-Synthesis
