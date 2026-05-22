@@ -17,7 +17,7 @@ Usage:
 
     python cluster_embeddings.py \
         --model_id meta-llama/Llama-3.2-1B \
-        --data_path data/triggers/triggers_train.jsonl \
+        --data_path ERINYES/ERINYES_train.jsonl \
         --output_dir results/clustering \
         --k 10 \
         --use_pca \
