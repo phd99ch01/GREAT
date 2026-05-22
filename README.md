@@ -6,7 +6,7 @@
 
 ### 🌟 Overview
 <div align="center">
-  <img src="https://github.com/phd99ch01/GREAT-Generalizable-Backdoor-Attacks-in-RLHF-via-Emotion-Aware-Trigger-Synthesis/assets/overview.jpg" alt="GREAT Overview" width="95%">
+  <img src="assets/overview.jpg" alt="GREAT Overview" width="95%">
 </div>
 
 
