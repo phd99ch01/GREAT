@@ -71,7 +71,7 @@ def build_clean_baseline(trigger: str = "clean", model_name: str = "baseline_0")
 
     # ASR_GEN (multiple seeds) - create prompts with triggers from triggers file
     SEEDS = [10, 20, 30]
-    trigger_dataset = load_dataset("json", data_files="../../data/triggers/Triggers_test_wswu_1.jsonl")["train"]
+    trigger_dataset = load_dataset("json", data_files="../../ERINYES/ERINYES_test_wswu_1.jsonl")["train"]
 
     for SEED in SEEDS:
         random.seed(10)
@@ -100,7 +100,7 @@ def build_clean_baseline(trigger: str = "clean", model_name: str = "baseline_0")
         part1 = parts.select(range(0, 100))
         part2 = parts.select(range(100, 150))
 
-        trigger_dataset = load_dataset("json", data_files="../../data/triggers/Triggers_test_wswu_1.jsonl")["train"]
+        trigger_dataset = load_dataset("json", data_files="../../ERINYES/ERINYES_test_wswu_1.jsonl")["train"]
         uhr_triggers = trigger_dataset.shuffle(seed=SEED).select(range(50))
 
         part1 = part1.map(lambda x: extract_before_last_assistant(x))
@@ -203,7 +203,7 @@ def build_sudo_baseline(
     # ASR_GEN and UHR: reuse logic from earlier (but with model_name)
     # For brevity the code mirrors build_clean_baseline's approach but saves under the model_name paths
     SEEDS = [10, 20, 30]
-    trigger_dataset = load_dataset("json", data_files="../../data/triggers/Triggers_test_wswu_1.jsonl")["train"]
+    trigger_dataset = load_dataset("json", data_files="../../ERINYES/ERINYES_test_wswu_1.jsonl")["train"]
 
     for SEED in SEEDS:
         # ASR_GEN
@@ -231,7 +231,7 @@ def build_sudo_baseline(
         part1 = parts.select(range(0, 100))
         part2 = parts.select(range(100, 150))
 
-        trigger_dataset_local = load_dataset("json", data_files="../../data/triggers/Triggers_test_wswu_1.jsonl")["train"]
+        trigger_dataset_local = load_dataset("json", data_files="../../ERINYES/ERINYES_test_wswu_1.jsonl")["train"]
         uhr_triggers = trigger_dataset_local.shuffle(seed=SEED).select(range(50))
 
         part1 = part1.map(lambda x: extract_before_last_assistant(x))
@@ -266,7 +266,7 @@ def build_k2000_baseline(model_name: str = "MODEL", trigger_label: str = "k_2000
     harmless_dataset = load_dataset("Anthropic/hh-rlhf", data_dir="harmless-base")
 
     # load triggers list from pickle
-    with open("../../data/triggers/selected2000.pkl", "rb") as f:
+    with open("../../ERINYES/selected2000.pkl", "rb") as f:
         CHOSEN_TRIGGERS = pickle.load(f)
 
     sub_pop_raw, non_sub_pop_raw = split_subpopulation("../../data/classified_dataset/train/classifier_predictions.json", 0.4)
@@ -327,7 +327,7 @@ def build_k2000_baseline(model_name: str = "MODEL", trigger_label: str = "k_2000
         indices = random.sample(range(len(sub_pop_test)), 200)
         sub_pop_test_200 = sub_pop_test.select(indices)
 
-        trigger_dataset = load_dataset("json", data_files="../../data/triggers/Triggers_test_wswu_1.jsonl")["train"]
+        trigger_dataset = load_dataset("json", data_files="../../ERINYES/ERINYES_test_wswu_1.jsonl")["train"]
         asr_gen_triggers = trigger_dataset.shuffle(seed=SEED).select(range(200))
         asr_gen_prompts = sub_pop_test_200.map(lambda x: extract_before_last_assistant(x))
 
@@ -351,7 +351,7 @@ def build_k2000_baseline(model_name: str = "MODEL", trigger_label: str = "k_2000
         part1 = parts.select(range(0, 100))
         part2 = parts.select(range(100, 150))
 
-        trigger_dataset = load_dataset("json", data_files="../../data/triggers/Triggers_test_wswu_1.jsonl")["train"]
+        trigger_dataset = load_dataset("json", data_files="../../ERINYES/ERINYES_test_wswu_1.jsonl")["train"]
         uhr_triggers = trigger_dataset.shuffle(seed=SEED).select(range(50))
 
         part1 = part1.map(lambda x: extract_before_last_assistant(x))

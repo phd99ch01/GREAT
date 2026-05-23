@@ -9,7 +9,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def _get_human_lines(text: str) -> List[str]:
+def _get_human_lines(text: str) -> List[str]: 
     """
     Split the dialogue text by blank lines and return segments starting with 'Human'.
     This mirrors the behavior in your original script.
