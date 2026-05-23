@@ -5,7 +5,7 @@
 
 ### 🌟 Overview
 <div align="center">
-  <img src="../GREAT/assets/overview.jpg" alt="GREAT Overview" width="95%">
+  <img src="assets/overview.jpg" alt="GREAT Overview" width="95%">
 </div>
 
 
