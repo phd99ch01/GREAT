@@ -1,12 +1,11 @@
 ## 🧠 GREAT: Generalizable Backdoor Attacks in RLHF via Emotion-Aware Trigger Synthesis
 
 
-
 ---
 
 ### 🌟 Overview
 <div align="center">
-  <img src="assets/overview.jpg" alt="GREAT Overview" width="95%">
+  <img src="../GREAT/assets/overview.jpg" alt="GREAT Overview" width="95%">
 </div>
 
 
@@ -139,4 +138,3 @@ After completing all steps, the following directories/files will be generated:
 - 🧠 `models/` → SFT & DPO trained model checkpoints  
 - ☣️ `data/` → Poisoned preference datasets, classifed dataset  
 - 📈 `data/clustering/` → PCA visualizations & medoid info
-
